@@ -5,10 +5,12 @@
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "EnchantedItemTriggerMixin",
+    "ItemUsedOnLocationTriggerMixin",
+    "ServerPlayerMixin",
+    "TameAnimalTriggerMixin"
   ],
-  "client": [
-    "ExampleMixin"
-  ],
+  "client": [],
   "server": [],
   "injectors": {
     "defaultRequire": 1

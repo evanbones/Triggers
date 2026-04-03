@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.evandev.triggers.Triggers"
+      "com.evandev.triggers.TriggersFabric"
     ],
     "client": [
       "com.evandev.triggers.client.TriggersClient"
