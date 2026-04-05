@@ -1,22 +1,22 @@
 package com.evandev.triggers;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.event.entity.item.ItemTossEvent;
-import net.minecraftforge.event.entity.living.BabyEntitySpawnEvent;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
-import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
-import net.minecraftforge.event.entity.living.MobEffectEvent;
-import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.event.level.BlockEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import com.evandev.triggers.event.events.TriggerBlockEvent;
 import com.evandev.triggers.event.events.TriggerEntityEvent;
 import com.evandev.triggers.event.events.TriggerPlayerEvent;
+import net.minecraft.world.entity.LivingEntity;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.event.entity.item.ItemTossEvent;
+import net.neoforged.neoforge.event.entity.living.BabyEntitySpawnEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
+import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
+import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
+import net.neoforged.neoforge.event.entity.player.ItemEntityPickupEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
-public class TriggersForgeEventForwarder {
+public class TriggersNeoForgeEventForwarder {
 
     @SubscribeEvent
     public static void onBlockBreak(BlockEvent.BreakEvent event) {
@@ -65,8 +65,8 @@ public class TriggersForgeEventForwarder {
     }
 
     @SubscribeEvent
-    public static void onItemPickup(EntityItemPickupEvent event) {
-        Triggers.EVENTS.post(new TriggerEntityEvent.PickupItem(event.getEntity(), event.getItem().getItem()));
+    public static void onItemPickup(ItemEntityPickupEvent.Pre event) {
+        Triggers.EVENTS.post(new TriggerEntityEvent.PickupItem(event.getPlayer(), event.getItemEntity().getItem()));
     }
 
     @SubscribeEvent
@@ -75,10 +75,8 @@ public class TriggersForgeEventForwarder {
     }
 
     @SubscribeEvent
-    public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-        if (event.phase == TickEvent.Phase.END) {
-            Triggers.EVENTS.post(new TriggerPlayerEvent.Tick(event.player));
-        }
+    public static void onPlayerTick(PlayerTickEvent.Post event) {
+        Triggers.EVENTS.post(new TriggerPlayerEvent.Tick(event.getEntity()));
     }
 
     @SubscribeEvent
