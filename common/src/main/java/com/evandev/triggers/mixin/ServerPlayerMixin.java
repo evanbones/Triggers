@@ -1,9 +1,9 @@
 package com.evandev.triggers.mixin;
 
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.stats.Stat;
 import com.evandev.triggers.Triggers;
 import com.evandev.triggers.event.events.TriggerPlayerEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.stats.Stat;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

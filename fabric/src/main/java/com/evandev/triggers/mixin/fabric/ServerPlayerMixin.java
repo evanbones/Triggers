@@ -1,11 +1,11 @@
 package com.evandev.triggers.mixin.fabric;
 
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.item.ItemStack;
 import com.evandev.triggers.Triggers;
 import com.evandev.triggers.event.events.TriggerEntityEvent;
 import com.evandev.triggers.event.events.TriggerPlayerEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

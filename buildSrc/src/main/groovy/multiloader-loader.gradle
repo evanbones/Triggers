@@ -43,15 +43,11 @@ publishMods {
         accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
         projectId = "1521416"
         minecraftVersions.add("${minecraft_version}")
-
-        optional("cloth-config")
     }
 
     modrinth {
         accessToken = providers.environmentVariable("MODRINTH_TOKEN")
         projectId = "O39hIwP5"
         minecraftVersions.add("${minecraft_version}")
-
-        optional("cloth-config")
     }
 }

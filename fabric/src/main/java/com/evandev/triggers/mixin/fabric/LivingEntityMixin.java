@@ -1,9 +1,9 @@
 package com.evandev.triggers.mixin.fabric;
 
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.entity.LivingEntity;
 import com.evandev.triggers.Triggers;
 import com.evandev.triggers.event.events.TriggerEntityEvent;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

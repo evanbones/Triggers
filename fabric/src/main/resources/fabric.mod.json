@@ -17,12 +17,6 @@
   "entrypoints": {
     "main": [
       "com.evandev.triggers.TriggersFabric"
-    ],
-    "client": [
-      "com.evandev.triggers.client.TriggersClient"
-    ],
-    "modmenu": [
-      "com.evandev.triggers.compat.ModMenuIntegration"
     ]
   },
   "mixins": [
