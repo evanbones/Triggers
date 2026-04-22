@@ -1,13 +1,13 @@
 package com.evandev.triggers.mixin.fabric;
 
+import com.evandev.triggers.Triggers;
+import com.evandev.triggers.event.events.TriggerBlockEvent;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.FarmBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import com.evandev.triggers.Triggers;
-import com.evandev.triggers.event.events.TriggerBlockEvent;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

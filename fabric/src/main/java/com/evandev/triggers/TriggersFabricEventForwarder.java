@@ -1,5 +1,7 @@
 package com.evandev.triggers;
 
+import com.evandev.triggers.event.events.TriggerBlockEvent;
+import com.evandev.triggers.event.events.TriggerEntityEvent;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
@@ -7,8 +9,6 @@ import net.fabricmc.fabric.api.event.player.UseItemCallback;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.item.ItemStack;
-import com.evandev.triggers.event.events.TriggerBlockEvent;
-import com.evandev.triggers.event.events.TriggerEntityEvent;
 
 public class TriggersFabricEventForwarder {
     public static void init() {

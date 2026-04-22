@@ -1,6 +1,5 @@
 package com.evandev.triggers;
 
-import com.evandev.triggers.config.ModConfig;
 import net.minecraft.server.MinecraftServer;
 
 public class CommonClass {
@@ -15,6 +14,5 @@ public class CommonClass {
     }
 
     public static void init() {
-        ModConfig.load();
     }
 }

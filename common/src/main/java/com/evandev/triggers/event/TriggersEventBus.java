@@ -1,8 +1,8 @@
 package com.evandev.triggers.event;
 
-import net.jodah.typetools.TypeResolver;
 import com.evandev.triggers.Constants;
 import com.evandev.triggers.event.events.TriggerEvent;
+import net.jodah.typetools.TypeResolver;
 
 import java.util.ArrayList;
 import java.util.HashMap;

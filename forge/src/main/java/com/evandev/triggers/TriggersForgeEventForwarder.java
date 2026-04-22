@@ -1,5 +1,8 @@
 package com.evandev.triggers;
 
+import com.evandev.triggers.event.events.TriggerBlockEvent;
+import com.evandev.triggers.event.events.TriggerEntityEvent;
+import com.evandev.triggers.event.events.TriggerPlayerEvent;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.item.ItemTossEvent;
@@ -12,9 +15,6 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import com.evandev.triggers.event.events.TriggerBlockEvent;
-import com.evandev.triggers.event.events.TriggerEntityEvent;
-import com.evandev.triggers.event.events.TriggerPlayerEvent;
 
 public class TriggersForgeEventForwarder {
 

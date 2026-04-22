@@ -50,9 +50,6 @@ dependencies {
     // EMI
     modRuntimeOnly "dev.emi:emi-forge:${emi_version}"
 
-    // Cloth Config
-    modImplementation "me.shedaniel.cloth:cloth-config-forge:${cloth_config_version}"
-
     implementation 'net.jodah:typetools:0.6.3'
     compileOnly project(":common")
     compileOnly 'org.jetbrains:annotations:26.0.2-1'

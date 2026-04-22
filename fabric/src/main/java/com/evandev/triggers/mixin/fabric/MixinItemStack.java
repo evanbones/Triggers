@@ -1,10 +1,10 @@
 package com.evandev.triggers.mixin.fabric;
 
 import com.evandev.triggers.Triggers;
+import com.evandev.triggers.event.events.TriggerPlayerEvent;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import com.evandev.triggers.event.events.TriggerPlayerEvent;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
