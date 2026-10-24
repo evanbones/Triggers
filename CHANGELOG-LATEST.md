@@ -1,3 +1,2 @@
-### Changes
-
-- Code cleanups.
+- Concurrency fix for trigger registration.
+- Ported to stonecutter.

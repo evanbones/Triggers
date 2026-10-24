@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.evandev.triggers.mixin",
+  "compatibilityLevel": "JAVA_${java_version}",
+  "mixins": [
+    "EnchantedItemTriggerMixin",
+    "ItemUsedOnLocationTriggerMixin",
+    "ServerPlayerMixin",
+    "TameAnimalTriggerMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
